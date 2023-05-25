@@ -3,10 +3,7 @@ FROM ubuntu:18.04
 RUN apt-get update \
     && apt-get install -y \
         nginx \
-        php-fpm \
     && rm -rf /var/lib/apt/lists/*
-
-COPY index.php /var/www/html/
 
 EXPOSE 80
 
